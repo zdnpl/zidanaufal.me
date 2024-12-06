@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap");
+
+body {
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.navbar {
+  background-color: black;
+}
+
+.container-fluid {
+  max-width: 90%;
+  height: 100px;
+  font-size: 18px;
+}
+
+.jumbotron {
+  margin-top: 3%;
+  background-color: white;
+}
+
+.img-fluid {
+  content: url("/src/img/profile_pict.png");
+  height: 90vh;
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about,
+.portfolio {
+  background-color: black;
+}
+
+.skills {
+  background-color: white;
+}
+
+.sub-judul {
+  font-size: 15px;
+  color: white;
+}
+
+.isi {
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+  font-size: 18px;
+}
+
+.isi_skills {
+  display: flex;
+  justify-content: center;
+}
+
+.spacing {
+  padding-top: 200px;
+}
+
+.tebel {
+  font-weight: bolder;
+}
+
+.logo_img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.isi-skills {
+  margin-top: 50px;
+}
+
+.skills_img {
+  width: 75px;
+  margin: 0px 20px;
+}
+
+.skills_img:hover {
+  transform: scale(1.2);
+}
+
+.barisan_bawah {
+  margin-top: 40px;
+}
+
+.btn-direct {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.btn-direct:hover {
+  color: white;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.navbar-dark {
+  background-color: black;
+  color: white;
+}
+
+.navbar-light-bg {
+  background-color: white !important;
+  color: black;
+}
+
+/* things that i can do for you */
+
+.service-section {
+  padding: 50px 0;
+}
+.service-section h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.service-card {
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+.service-card:last-child {
+  border-right: none;
+}
+.service-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c0c0c0;
+}
+.service-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.isi-porto {
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+}
+
+.card {
+  background-color: #161b22;
+  border: none;
+  cursor: pointer;
+  border: 10px solid black;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  border: 10px solid #c0c0c017;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-text {
+  color: white;
+}
+
+.tag {
+  background-color: #21262d;
+  color: #c9d1d9;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+}
+.tag + .tag {
+  margin-left: 0.5rem;
+}
+
+.links-container {
+  font-size: 20px;
+  color: white;
+  padding: 20px 0;
+}
+.link-item {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.link-item:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.link-item i {
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.link-item:hover i {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 767px) {
+  .img-fluid {
+    content: url("/src/img/pp_mobile.png");
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .container-fluid {
+    height: 50px;
+  }
+  .jumbotron {
+    margin-top: 15%;
+  }
+  .spacing {
+    padding-top: 30px;
+  }
+  .isi {
+    max-width: 85%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .logo_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+  }
+
+  .skills_img {
+    width: 75px;
+    margin: 0px 20px;
+  }
+
+  .skills_text {
+    font-size: 12px;
+  }
+  .isi-skills {
+    display: block;
+    margin: auto;
+  }
+  .barisan_bawah {
+    margin-top: 0px;
+  }
+  .card-works {
+    margin-top: -75px;
+  }
+}
