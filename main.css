@@ -257,4 +257,7 @@ img {
   .card-works {
     margin-top: -75px;
   }
+  .isi-porto {
+    max-width: 95%;
+  }
 }
