@@ -1,1 +1,0 @@
-# zidanaufal.me
