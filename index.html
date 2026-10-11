@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="Portofolio project website BEM FIA UI." />
+    <title>Zidan Naufal - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Kembali ke atas">Zidan<span>Naufal</span></a>
+
+      <div class="nav-actions">
+        <a class="search-pill" href="#project"><span class="search-icon">⌕</span> Explore project <kbd>↵</kbd></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">☼</button>
+        <a class="signin" href="#contact">Let’s talk ↗</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+      </div>
+    </header>
+
+    <main id="home" class="page-shell">
+      <section class="hero">
+        <h1>Zidan Naufal<span class="period">.</span></h1>
+        <p class="hero-role">Full Stack Developer.</p>
+        <p class="hero-copy">Currently open for website project.</p>
+        <div class="hero-buttons">
+          <a class="button button-light" href="#project"><span>↘</span> See project</a>
+          <a class="button button-outline" href="#contact"><span>✉</span> Contact</a>
+        </div>
+      </section>
+
+      <section class="info-strip" aria-label="Informasi singkat">
+        <div class="info-cell"><span class="eyebrow">Undergraduate at</span><strong>Public Administration</strong><small>University of Indonesia</small></div>
+        <div class="info-cell"><span class="eyebrow">Based In</span><strong>Jakarta, Indonesia</strong><small> GMT+7</small></div>
+        <div class="info-cell"><span class="eyebrow">Latest Project</span><strong>fiacupxfiarun.com</strong><small>for BEM FIA UI</small></div>
+        <div class="info-cell">
+          <span class="eyebrow">CONTACT</span><strong><a href="#contact">Say hello ↗</a></strong
+          ><small>Email & LinkedIn</small>
+        </div>
+      </section>
+
+      <section id="project" class="project-section">
+        <div class="section-heading">
+          <span class="eyebrow">LATEST PROJECT</span>
+          <span class="muted">Featured work</span>
+        </div>
+        <article class="project-intro">
+          <div class="project-title-wrap">
+            <h2>fiacupxfiarun.com</h2>
+          </div>
+          <p class="project-description">
+            Ticket sales and sports contingent registration website for the FIA CUP x FIA RUN event, <br />
+            organized by the Sports Department of BEM FIA UI 2026.
+          </p>
+        </article>
+        <figure class="shot shot-main">
+          <img src="src/main page.png" alt="Tampilan utama website BEM FIA UI" onerror="this.closest('figure').classList.add('missing-image')" />
+          <figcaption><span>01 / Landing Page</span></figcaption>
+          <div class="image-placeholder"><span>01</span><strong>MAIN DISPLAY</strong><small>Ganti dengan screenshot tampilan utama website</small></div>
+        </figure>
+      </section>
+
+      <section id="details" class="details-section">
+        <div class="section-heading">
+          <span class="eyebrow">INSIDE THE PROJECT</span>
+          <span class="muted">Features & interface</span>
+        </div>
+        <div class="feature-grid">
+          <figure class="shot feature-shot">
+            <img src="src/event.png" alt="Fitur pertama website BEM FIA UI" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>01 / FEATURE</span><span>Tickets Selection</span></figcaption>
+            <div class="image-placeholder"><span>02</span><strong>Tickets Selection</strong><small>Ganti dengan screenshot fitur pertama</small></div>
+          </figure>
+          <figure class="shot feature-shot">
+            <img src="src/ticket registration.png" alt="Fitur kedua website BEM FIA UI" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>02 / FEATURE</span><span>Tickets form registration</span></figcaption>
+            <div class="image-placeholder"><span>03</span><strong>FEATURE DETAIL</strong><small>Ganti dengan screenshot fitur kedua</small></div>
+          </figure>
+        </div>
+        <div class="feature-grid">
+          <figure class="shot feature-shot">
+            <img src="src/email.png" alt="Fitur pertama website BEM FIA UI" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>03 / FEATURE</span><span>Tickets sent via Email</span></figcaption>
+            <div class="image-placeholder"><span>02</span><strong>FEATURE OVERVIEW</strong><small>Ganti dengan screenshot fitur pertama</small></div>
+          </figure>
+          <figure class="shot feature-shot">
+            <img src="src/ticket.png" alt="Fitur kedua website BEM FIA UI" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>04 / FEATURE</span><span>Tickets file with QR Code</span></figcaption>
+            <div class="image-placeholder"><span>03</span><strong>FEATURE DETAIL</strong><small>Ganti dengan screenshot fitur kedua</small></div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="mobile" class="mobile-section">
+        <div class="section-heading">
+          <span class="eyebrow">RESPONSIVE EXPERIENCE</span>
+          <span class="muted">Mobile views</span>
+        </div>
+        <div class="mobile-intro">
+          <h2>Designed for<br />smaller screens<span class="period">.</span></h2>
+        </div>
+        <div class="mobile-gallery">
+          <figure class="shot phone-shot">
+            <img src="src/mobile-main.png" alt="Tampilan beranda website pada perangkat mobile" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>01 / MOBILE VIEW</span><span>Home Page</span></figcaption>
+            <div class="image-placeholder"><span>05</span><strong>MOBILE HOME</strong><small>Screenshot tampilan mobile 1</small></div>
+          </figure>
+          <figure class="shot phone-shot">
+            <img src="src/mobile-event.png" alt="Tampilan fitur website pada perangkat mobile" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>02 / MOBILE VIEW</span><span>Tickets</span></figcaption>
+            <div class="image-placeholder"><span>06</span><strong>MOBILE FEATURE</strong><small>Screenshot tampilan mobile 2</small></div>
+          </figure>
+          <figure class="shot phone-shot">
+            <img src="src/mobile-scan.jpeg" alt="Tampilan navigasi website pada perangkat mobile" onerror="this.closest('figure').classList.add('missing-image')" />
+            <figcaption><span>03 / MOBILE VIEW</span><span>Admin QR Scanner</span></figcaption>
+            <div class="image-placeholder"><span>07</span><strong>MOBILE NAV</strong><small>Screenshot tampilan mobile 3</small></div>
+          </figure>
+        </div>
+      </section>
+
+      <footer id="contact" class="contact-section">
+        <div>
+          <span class="eyebrow">HAVE A PROJECT IN MIND?</span>
+          <h2>Let’s get in touch<span class="period">.</span></h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:mzidanaufal.07@gmail.com"><span>Email</span><strong>mzidanaufal.07@gmail.com ↗</strong></a>
+          <a href="https://www.linkedin.com/in/username/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/zidan-naufal ↗</strong></a>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Zidan Naufal</span><a href="#home">Back to top ↑</a><span></span>
+        </div>
+      </footer>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".topbar", {
+          y: -50,
+          opacity: 0,
+          duration: 1,
+          ease: "power3.out",
+        });
+
+        gsap.from(".hero h1, .hero .hero-role, .hero .hero-copy, .hero-buttons", {
+          y: 40,
+          opacity: 0,
+          duration: 1.2,
+          stagger: 0.2,
+          ease: "power3.out",
+        });
+
+        gsap.from(".info-strip", {
+          scrollTrigger: {
+            trigger: ".info-strip",
+            start: "top 85%",
+          },
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: "power3.out",
+        });
+
+        const headings = document.querySelectorAll(".section-heading, .project-intro, .mobile-intro");
+        headings.forEach((heading) => {
+          gsap.from(heading, {
+            scrollTrigger: {
+              trigger: heading,
+              start: "top 85%",
+            },
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+          });
+        });
+
+        const shots = document.querySelectorAll(".shot");
+        shots.forEach((shot) => {
+          gsap.from(shot, {
+            scrollTrigger: {
+              trigger: shot,
+              start: "top 85%",
+            },
+            scale: 0.95,
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+          });
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
